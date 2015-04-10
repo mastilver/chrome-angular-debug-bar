@@ -1,0 +1,1 @@
+# chrome-angular-debug-bar
