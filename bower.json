@@ -1,0 +1,19 @@
+{
+  "name": "chrome-angular-debug-bar",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mastilver/chrome-angular-debug-bar",
+  "authors": [
+    "Sileghem Thomas <tsileghem@neworbit.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-debug-bar": "~0.4.2"
+  }
+}

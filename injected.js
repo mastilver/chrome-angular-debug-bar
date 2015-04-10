@@ -2,18 +2,24 @@ var documentReadyFn = window.onload || function (){};
 var extensionAngularModuleName = 'chromeAngularDebugBarModule';
 
 function defineModule(){
-    angular.module(extensionAngularModuleName, [])
+    angular.module(extensionAngularModuleName, ['angular-debug-bar'])
 
     .config(function(){
 
-        console.log('config executed');
     });
+}
+
+function insertDirective(){
+    var directive = document.createElement('angular-debug-bar');
+    document.body.appendChild(directive);
 }
 
 
 // checkout: https://github.com/rev087/ng-inspector/blob/master/src/js/bootstrap.js
 // for more information on the bootstraping phase
 function bootstrap() {
+
+    insertDirective();
 
     var didWrapBootstrap = false;
 
